@@ -25,11 +25,19 @@
       }
     }
     img.logo {
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      margin-bottom: 30px;
-    }
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  img.logo {
+    transform: scale(1.5);
+    transform-origin: top center;
+  }
+}
+
     iframe {
       margin-top: 20px;
       border: none;
