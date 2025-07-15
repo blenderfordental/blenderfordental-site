@@ -35,21 +35,23 @@
   </button>
 
   <iframe 
-    id="scplayer"
-    width="100%" 
-    height="120" 
-    scrolling="no" 
-    allow="autoplay"
-    style="display:none;">
-  </iframe>
+  id="scplayer"
+  width="100%" 
+  height="120" 
+  scrolling="no" 
+  allow="autoplay"
+  style="display:none;">
+</iframe>
 
-  <script>
-    function startAudio() {
-      const player = document.getElementById("scplayer");
-      player.style.display = 'block';
-      player.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mantas-aus/dental-cadcamers-designing&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false";
-    }
-  </script>
+<script>
+  function startAudio() {
+    const player = document.getElementById("scplayer");
+    player.style.display = 'block';
+    player.src =
+      "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mantas-aus/dental-cadcamers-designing&auto_play=true&start_time=540000&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false";
+  }
+</script>
+
 
 </body>
 </html>
