@@ -29,14 +29,18 @@
   max-width: 1200px;
   height: auto;
   margin-bottom: 30px;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 600px) {
   img.logo {
-    transform: scale(1.2);
+    transform: scale(1.5);
     transform-origin: top center;
+    max-height: 70vh; /* Prevent logo from covering entire screen */
+    margin-bottom: 40px; /* Add more space below it */
   }
 }
+
 
     iframe {
       margin-top: 20px;
