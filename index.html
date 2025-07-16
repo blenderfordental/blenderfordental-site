@@ -126,6 +126,41 @@
 <div style="max-width: 500px; margin: 40px auto; text-align: center;">
   <h3 style="color: #66ffcc;"> ✍️ Registration open!:</h3>
  </div>
+
+  <!-- DUAL CLOCK DISPLAY -->
+<div style="max-width: 400px; margin: 60px auto; text-align: center;">
+  <h3 style="color: #66ffcc; font-size: 1.4rem;">🕒 Know Your Time</h3>
+
+  <div id="clock-vilnius" style="margin-top: 20px;"></div>
+  <div id="clock-local" style="margin-top: 20px;"></div>
+</div>
+
+<script src="https://time.now/widget/digital-clock.js"></script>
+<script>
+  // Vilnius (EET) clock
+  time.now.widget.init({
+    target: 'clock-vilnius',
+    timezone: 'Europe/Vilnius',
+    style: 'minimalist',
+    format: 'HH:mm:ss, DD MMM YYYY',
+    size: 'medium',
+    bg: '#111',
+    text: '#66ffcc'
+  });
+
+  // Visitor’s local time
+  time.now.widget.init({
+    target: 'clock-local',
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    style: 'minimalist',
+    format: 'HH:mm:ss, DD MMM YYYY',
+    size: 'medium',
+    bg: '#111',
+    text: '#ffffff'
+  });
+</script>
+
+  
 <!-- 🔹 Course Offer Boxes -->
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 60px;">
 
