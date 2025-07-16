@@ -14,28 +14,6 @@
       padding: 40px 20px;
       font-size: 1.1rem;
     }
-
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        font-size: 1.2rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      img.logo {
-        transform: scale(1.5);
-        transform-origin: top center;
-        max-height: 70vh;
-        margin-bottom: 40px;
-      }
-    }
-
     img.logo {
       width: 100%;
       max-width: 1200px;
@@ -43,12 +21,9 @@
       margin-bottom: 30px;
       transition: transform 0.3s ease;
     }
-
     iframe {
-      margin-top: 20px;
       border: none;
     }
-
     .music-button {
       padding: 12px 24px;
       font-size: 1.1rem;
@@ -62,12 +37,10 @@
       text-decoration: none;
       display: inline-block;
     }
-
     .music-button:hover {
       background-color: #440066;
       color: #fff;
     }
-
     .course-packages {
       display: flex;
       flex-wrap: wrap;
@@ -75,7 +48,6 @@
       gap: 20px;
       margin-top: 60px;
     }
-
     .course-box {
       background-color: #111;
       padding: 20px;
@@ -83,25 +55,21 @@
       width: 300px;
       box-shadow: 0 0 12px #333;
     }
-
     .course-box img {
       width: 100%;
       border-radius: 8px;
       margin-bottom: 15px;
     }
-
     footer {
       margin-top: 80px;
       color: #888;
       font-size: 0.9rem;
     }
-
     footer a {
       color: #66ffcc;
       text-decoration: none;
       margin: 0 5px;
     }
-
     @media (max-width: 800px) {
       .course-packages {
         flex-direction: column;
@@ -112,9 +80,27 @@
 </head>
 <body>
 
-  <!-- Promo Video Block -->
-  <div style="max-width: 600px; margin: 0 auto; padding: 20px; text-align: center; background-color: #111; border-radius: 12px;">
+  <!-- Logo -->
+  <img src="logo.png" alt="Blenderfordental Logo" class="logo">
 
+  <!-- SoundCloud Player -->
+  <div style="margin-bottom: 40px;">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/YOUR_TRACK_LINK&color=%23555555&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div style="max-width: 800px; margin: 0 auto 60px;">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Course Promo Video -->
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #111; border-radius: 12px;">
     <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px; box-shadow: 0 0 15px #550088;">
       <source src="Live_course_b4d_zoom_2025-07.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -129,20 +115,11 @@
       Book your place now!
     </p>
 
-    <div style="margin-top: 30px;">
-      <a href="https://your-zoom-registration-link.com" target="_blank"
-         style="display: inline-block; padding: 14px 28px; background-color: #33cc99; color: #000;
-                text-decoration: none; font-size: 1.2rem; border-radius: 8px;
-                font-weight: bold; box-shadow: 0 0 12px #33cc99; transition: background 0.3s;">
-        ✅ Register Now
-      </a>
-    </div>
-
+    <!-- Timezone Display -->
     <div style="margin-top: 40px;">
       <h3 style="color: #66ffcc;">🕒 Timezones</h3>
       <p>Vilnius Time:</p>
       <iframe src="https://time.is/Vilnius" style="width:100%; max-width:400px; height:60px;"></iframe>
-
       <p style="margin-top: 20px;">Your Local Time:</p>
       <iframe src="https://time.is/just" style="width:100%; max-width:400px; height:60px;"></iframe>
     </div>
